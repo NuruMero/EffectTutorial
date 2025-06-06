@@ -1,5 +1,5 @@
 import { Effect, Layer, ManagedRuntime } from "effect";
-import { PokeAPI } from "../services/PokeApi";
+import { PokeAPI } from "./services/PokeApi";
 
 // Layers
 const MainLayer = Layer.mergeAll(

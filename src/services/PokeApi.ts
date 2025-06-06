@@ -1,8 +1,7 @@
 import { Context, Effect, Layer, ParseResult, Schema } from "effect";
-import { Pokemon, decodePokemon } from "../src/domain/schemas";
-import { FetchError, JsonError } from "../src/domain/errors";
+import { Pokemon, decodePokemon } from "../domain/schemas";
+import { FetchError, JsonError } from "../domain/errors";
 import type { ConfigError } from "effect/ConfigError";
-import { config } from "../src/config/Config";
 import { PokemonCollection } from "./PokemonCollection";
 import { BuildPokeApiUrl } from "./BuildPokeApiUrl";
 

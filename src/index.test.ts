@@ -1,7 +1,7 @@
 import { afterAll, afterEach, beforeAll, expect, it } from "vitest";
 import { server } from "../test/node";
 import { ConfigProvider, Effect, Layer, ManagedRuntime } from "effect";
-import { PokeAPI } from "../services/PokeApi";
+import { PokeAPI } from "./services/PokeApi";
 
 // Comportamientos del server
 beforeAll(() => server.listen());
