@@ -8,7 +8,6 @@ const MainLayer = Layer.mergeAll(
 
 const PokemonRuntime = ManagedRuntime.make(MainLayer);
 
-
 // Lógica del programa
 const program = Effect.gen(function* () {
   const pokeAPI = yield* PokeAPI;
@@ -28,4 +27,4 @@ const main = runnable.pipe(
   })
 );
 
-PokemonRuntime.runPromise(main).then(console.log);
+PokemonRuntime.runPromiseExit(main).then(console.log);
