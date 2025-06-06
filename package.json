@@ -1,0 +1,26 @@
+{
+  "name": "ProjectTypeonce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx --env-file .env src/index.ts ",
+    "tsc":"tsc",
+    "test": "vitest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.11.1",
+  "devDependencies": {
+    "@types/node": "^22.15.29",
+    "msw": "^2.9.0",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.2"
+  },
+  "dependencies": {
+    "@effect/schema": "^0.75.5",
+    "effect": "^3.16.3"
+  }
+}
